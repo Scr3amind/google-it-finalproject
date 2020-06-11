@@ -16,4 +16,5 @@ def process_data(filepath):
 if __name__ == "__main__":
   path = "./supplier-data/descriptions/"
   print(process_data(path))
-  print("Processed Update on " + str(datetime.datetime.today()))
+  today = datetime.datetime.today()
+  title = today.strftime("Processed Update on %d %b %Y"))
